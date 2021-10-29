@@ -13,4 +13,14 @@ export function setRequestUrl(types, data, title, typeUrl) {
         typeUrl: typeUrl,
     }
 }
-
+export function seInfoMovie(data) {
+    return {
+        type: 'SET_INFO_MOVIE',
+        infoMovie: data,
+    }
+}
+export function hideShowInfoModal() {
+    return {
+        type: 'HIDE_SHOW_MODAL',
+    }
+}

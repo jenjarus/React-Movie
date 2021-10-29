@@ -1,10 +1,21 @@
 import React from "react";
+import {connect} from "react-redux";
+import {seInfoMovie} from '../actions'
 
-const ListMovieItem = ({data}) => {
+const ListMovieItem = ({data, seInfoMovie}) => {
     const ratingHide = !data.rating ? ' hide': '';
 
+    const apiMovie = async (reques) => {
+        const baseUrl = 'https://kinopoiskapiunofficial.tech/api/v2.2/films/';
+        const apiHeadersKey = {'X-API-KEY': '943156f1-51e2-4bba-9657-e25705632abd'};
+
+        const api_url = await fetch(baseUrl + reques, {headers: apiHeadersKey});
+        const data = await api_url.json();
+        seInfoMovie(data);
+    };
+
     return (
-        <div className="item">
+        <div className="item" onClick={() => apiMovie(data.filmId)}>
             <div className="item_wrap">
                 <div className="img">
                     <span className={'rating' + ratingHide}>{data.rating}</span>
@@ -19,4 +30,17 @@ const ListMovieItem = ({data}) => {
         </div>)
 };
 
-export default ListMovieItem
+function mapStateToProps(state) {
+    return {
+        typesList: state.typesList,
+        typeUrl: state.typeUrl,
+        listMovie: state.listMovie,
+        requestUrl: state.requestUrl,
+    }
+}
+
+const mapDipatchToProps = {
+    seInfoMovie,
+};
+
+export default connect(mapStateToProps, mapDipatchToProps)(ListMovieItem)

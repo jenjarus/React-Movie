@@ -33,7 +33,6 @@ const ListTops = ({setRequestUrl}) => {
                 <button className="btn" onClick={()=>setRequestUrl(REQUESTS.best.type, REQUESTS.best.url, REQUESTS.best.title, typeUrl)}>Топ 20 лучших фильмов</button>
                 <button className="btn" onClick={()=>setRequestUrl(REQUESTS.popul.type, REQUESTS.popul.url, REQUESTS.popul.title, typeUrl)}>Топ 20 популярных фильмов</button>
                 <button className="btn" onClick={()=>setRequestUrl(REQUESTS.await.type, REQUESTS.await.url, REQUESTS.await.title, typeUrl)}>Топ 20 ожидаемых фильмов</button>
-                <button className="btn" onClick={()=>setRequestUrl(REQUESTS.premieres.type, REQUESTS.premieres.url, REQUESTS.premieres.title, typeUrl)}>Топ 20 кинопремьер</button>
             </div>
         </div>
     );
