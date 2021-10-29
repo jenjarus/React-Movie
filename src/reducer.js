@@ -1,7 +1,8 @@
 const initialState = {
-    listMovie: {},
+    listMovie: [],
     titleList: "Топ 20 лучших фильмов",
     typesList: "films",
+    typeUrl: 2,
     requestUrl: "top?type=TOP_250_BEST_FILMS",
 };
 
@@ -18,6 +19,7 @@ export default function reducer(state = initialState, action) {
                 typesList: action.types,
                 requestUrl: action.requestUrl,
                 titleList: action.titleList,
+                typeUrl: action.typeUrl,
             };
         default:
             return state;

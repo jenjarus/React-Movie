@@ -4,12 +4,13 @@ export function setListMovie(data) {
         listMovie: data,
     }
 }
-export function setRequestUrl(types, data, title) {
+export function setRequestUrl(types, data, title, typeUrl) {
     return {
         type: 'SET_REQUEST_URL',
         types: types,
         requestUrl: data,
-        titleList : title
+        titleList : title,
+        typeUrl: typeUrl,
     }
 }
 

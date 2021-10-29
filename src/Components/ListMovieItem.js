@@ -7,7 +7,7 @@ const ListMovieItem = ({data}) => {
         <div className="item">
             <div className="item_wrap">
                 <div className="img">
-                    <span className={'rating' + ratingHide}>${data.rating}</span>
+                    <span className={'rating' + ratingHide}>{data.rating}</span>
                     <img src={data.posterUrlPreview} alt=""/>
                 </div>
                 <div className="title">{data.nameRu}</div>
