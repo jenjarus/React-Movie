@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fb4b3900-af83-4b5f-bcc1-cbb90d5bf3c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListMovie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListMovieItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListMovieItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ListTops.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListTops.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/base.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,6 +56,16 @@
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -69,6 +76,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -83,7 +95,8 @@
       <workItem from="1635408336796" duration="1939000" />
       <workItem from="1635432175062" duration="16048000" />
       <workItem from="1635459564785" duration="297000" />
-      <workItem from="1635502360097" duration="10846000" />
+      <workItem from="1635502360097" duration="11083000" />
+      <workItem from="1635537874480" duration="237000" />
     </task>
     <servers />
   </component>
