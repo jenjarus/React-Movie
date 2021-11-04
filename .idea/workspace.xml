@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fb4b3900-af83-4b5f-bcc1-cbb90d5bf3c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListTops.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListTops.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ViewMovieInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ViewMovieInfo.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +95,10 @@
       <workItem from="1635432175062" duration="16048000" />
       <workItem from="1635459564785" duration="297000" />
       <workItem from="1635502360097" duration="11083000" />
-      <workItem from="1635537874480" duration="237000" />
+      <workItem from="1635537874480" duration="461000" />
+      <workItem from="1635538389436" duration="108000" />
+      <workItem from="1635583095398" duration="1518000" />
+      <workItem from="1636026363200" duration="539000" />
     </task>
     <servers />
   </component>

@@ -1,9 +1,10 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import {connect} from "react-redux";
 import {hideShowInfoModal} from '../actions'
 
 const ViewMovieInfo = ({infoMovie, hideShowInfoModal}) => {
-    return (
+    return ReactDOM.createPortal(
         <>
             <div className="modal_box">
                 <div className="modal_wrap">
@@ -28,7 +29,8 @@ const ViewMovieInfo = ({infoMovie, hideShowInfoModal}) => {
                 </div>
             </div>
             <div className="modal_bg" onClick={hideShowInfoModal}></div>
-        </>
+        </>,
+        document.querySelector('main')
     )
 };
 
