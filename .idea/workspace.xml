@@ -3,7 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="fb4b3900-af83-4b5f-bcc1-cbb90d5bf3c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ViewMovieInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ViewMovieInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ListMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListMovie.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ListMovieItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListMovieItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ListTops.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListTops.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SearchMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchMovie.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ViewMovieInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ViewMovieInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supportScripts.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -38,6 +51,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="D:\Projects\react-movie\node_modules\typescript\lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -51,7 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="npm.build">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -98,7 +112,11 @@
       <workItem from="1635537874480" duration="461000" />
       <workItem from="1635538389436" duration="108000" />
       <workItem from="1635583095398" duration="1518000" />
-      <workItem from="1636026363200" duration="539000" />
+      <workItem from="1636026363200" duration="768000" />
+      <workItem from="1636032412672" duration="62000" />
+      <workItem from="1636114823532" duration="2058000" />
+      <workItem from="1636233688857" duration="368000" />
+      <workItem from="1636274546892" duration="9427000" />
     </task>
     <servers />
   </component>

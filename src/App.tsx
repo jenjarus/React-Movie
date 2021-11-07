@@ -1,35 +1,42 @@
 import React, {useEffect} from 'react';
-import {connect} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {setListMovie} from './actions'
 import './styles/reset.css'
 import './styles/base.scss'
 import ListMovie from "./Components/ListMovie";
 import ListTops from "./Components/ListTops";
 import SearchMovie from "./Components/SearchMovie";
+import {IReduxState} from "./types";
 
-const App = ({setListMovie, typesList, listMovie, typeUrl, requestUrl}) => {
-    const api = async (reques, typeArr, typeUrl) => {
-      let baseUrl;
-      const apiHeadersKey = {'X-API-KEY': '943156f1-51e2-4bba-9657-e25705632abd'};
+const App = () => {
+    const dispatch = useDispatch();
+    const typesList = useSelector((store: IReduxState) => store.typesList);
+    const listMovie = useSelector((store: IReduxState) => store.listMovie);
+    const typeUrl = useSelector((store: IReduxState) => store.typeUrl);
+    const requestUrl = useSelector((store: IReduxState) => store.requestUrl);
 
-      switch (typeUrl) {
-        case 1:
-          baseUrl = 'https://kinopoiskapiunofficial.tech/api/v2.1/films/';
-          break;
-        case 2:
-          baseUrl = 'https://kinopoiskapiunofficial.tech/api/v2.2/films/';
-          break;
-        default:
-          baseUrl = 'https://kinopoiskapiunofficial.tech/api/v2.1/films/';
-          console.log('Упс...');
-          break;
-      }
+    const api = async (reques: string, typeArr: string, typeUrl: number) => {
+        let baseUrl: string;
+        const apiHeadersKey: HeadersInit = {'X-API-KEY': '943156f1-51e2-4bba-9657-e25705632abd'};
+
+        switch (typeUrl) {
+            case 1:
+                baseUrl = 'https://kinopoiskapiunofficial.tech/api/v2.1/films/';
+                break;
+            case 2:
+                baseUrl = 'https://kinopoiskapiunofficial.tech/api/v2.2/films/';
+                break;
+            default:
+                baseUrl = 'https://kinopoiskapiunofficial.tech/api/v2.1/films/';
+                console.log('Упс...');
+                break;
+        }
         const api_url = await fetch(baseUrl + reques, {headers: apiHeadersKey});
         const data = await api_url.json();
-        setListMovie(data[typeArr]);
+        dispatch(setListMovie(data[typeArr]));
     };
 
-    const loadingApp = (data) => {
+    const loadingApp = (data: object[]) => {
         if (Object.keys(data).length) {
             return <ListMovie/>
         } else {
@@ -68,18 +75,5 @@ const App = ({setListMovie, typesList, listMovie, typeUrl, requestUrl}) => {
     );
 };
 
-function mapStateToProps(state) {
-    return {
-        typesList: state.typesList,
-        typeUrl: state.typeUrl,
-        listMovie: state.listMovie,
-        requestUrl: state.requestUrl,
-    }
-}
-
-const mapDipatchToProps = {
-    setListMovie,
-};
-
-export default connect(mapStateToProps, mapDipatchToProps)(App)
+export default App
 

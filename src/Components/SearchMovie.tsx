@@ -1,13 +1,14 @@
 import React from "react";
-import {connect} from "react-redux";
+import {useDispatch} from "react-redux";
 import {setRequestUrl} from "../actions";
 
-const SearchMovie = ({setRequestUrl}) => {
+const SearchMovie = () => {
+    const dispatch = useDispatch();
     const typeUrl = 1; //Версия API
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
         e.preventDefault();
-        setRequestUrl("films", "search-by-keyword?keyword=" + e.target.value, "Поиск:", typeUrl)
+        dispatch(setRequestUrl("films", "search-by-keyword?keyword=" + e.target.value, "Поиск:", typeUrl));
     };
 
     return (
@@ -24,14 +25,4 @@ const SearchMovie = ({setRequestUrl}) => {
     );
 };
 
-function mapStateToProps(state) {
-    return {
-        titleList: state.titleList,
-    }
-}
-
-const mapDipatchToProps = {
-    setRequestUrl,
-};
-
-export default connect(mapStateToProps, mapDipatchToProps)(SearchMovie)
+export default SearchMovie

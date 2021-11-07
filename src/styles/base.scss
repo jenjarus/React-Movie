@@ -179,6 +179,9 @@ main {
 
   .modal_box {
     position: fixed;
+    min-width: 850px;
+    max-height: 100%;
+    overflow: auto;
     left: 50%;
     top: 50%;
     border-radius: 5px;

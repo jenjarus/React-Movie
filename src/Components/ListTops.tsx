@@ -1,8 +1,9 @@
 import React from "react";
-import {connect} from "react-redux";
+import {useDispatch} from "react-redux";
 import {setRequestUrl} from "../actions";
 
-const ListTops = ({setRequestUrl}) => {
+const ListTops = () => {
+    const dispatch = useDispatch();
     const typeUrl = 2; //Версия API
     const REQUESTS = {
         best: {
@@ -30,21 +31,15 @@ const ListTops = ({setRequestUrl}) => {
     return (
         <div className="listTops">
             <div className="items">
-                <button className="btn" onClick={()=>setRequestUrl(REQUESTS.best.type, REQUESTS.best.url, REQUESTS.best.title, typeUrl)}>{REQUESTS.best.title}</button>
-                <button className="btn" onClick={()=>setRequestUrl(REQUESTS.popul.type, REQUESTS.popul.url, REQUESTS.popul.title, typeUrl)}>{REQUESTS.popul.title}</button>
-                <button className="btn" onClick={()=>setRequestUrl(REQUESTS.await.type, REQUESTS.await.url, REQUESTS.popul.title, typeUrl)}>{REQUESTS.popul.title}</button>
+                <button className="btn"
+                        onClick={() => dispatch(setRequestUrl(REQUESTS.best.type, REQUESTS.best.url, REQUESTS.best.title, typeUrl))}>{REQUESTS.best.title}</button>
+                <button className="btn"
+                        onClick={() => dispatch(setRequestUrl(REQUESTS.popul.type, REQUESTS.popul.url, REQUESTS.popul.title, typeUrl))}>{REQUESTS.popul.title}</button>
+                <button className="btn"
+                        onClick={() => dispatch(setRequestUrl(REQUESTS.await.type, REQUESTS.await.url, REQUESTS.popul.title, typeUrl))}>{REQUESTS.popul.title}</button>
             </div>
         </div>
     );
 };
 
-function mapStateToProps(state) {
-    return {
-        titleList: state.titleList,
-    }
-}
-const mapDipatchToProps = {
-    setRequestUrl,
-};
-
-export default connect(mapStateToProps, mapDipatchToProps)(ListTops)
+export default ListTops

@@ -1,17 +1,23 @@
 import React from "react";
-import {connect} from "react-redux";
-import {seInfoMovie} from '../actions'
+import {useDispatch} from "react-redux";
+import {seInfoMovie} from '../actions';
+import {DataListInfo} from "../types"
 
-const ListMovieItem = ({data, seInfoMovie}) => {
-    const ratingHide = !data.rating ? ' hide': '';
+interface IListMovieItem {
+    data: DataListInfo
+}
 
-    const apiMovie = async (reques) => {
+const ListMovieItem: React.FC<IListMovieItem> = ({data}) => {
+    const dispatch = useDispatch();
+    const ratingHide = !data.rating ? ' hide' : '';
+
+    const apiMovie = async (reques: number) => {
         const baseUrl = 'https://kinopoiskapiunofficial.tech/api/v2.2/films/';
-        const apiHeadersKey = {'X-API-KEY': '943156f1-51e2-4bba-9657-e25705632abd'};
+        const apiHeadersKey: HeadersInit = {'X-API-KEY': '943156f1-51e2-4bba-9657-e25705632abd'};
 
         const api_url = await fetch(baseUrl + reques, {headers: apiHeadersKey});
         const data = await api_url.json();
-        seInfoMovie(data);
+        dispatch(seInfoMovie(data));
     };
 
     return (
@@ -30,17 +36,4 @@ const ListMovieItem = ({data, seInfoMovie}) => {
         </div>)
 };
 
-function mapStateToProps(state) {
-    return {
-        typesList: state.typesList,
-        typeUrl: state.typeUrl,
-        listMovie: state.listMovie,
-        requestUrl: state.requestUrl,
-    }
-}
-
-const mapDipatchToProps = {
-    seInfoMovie,
-};
-
-export default connect(mapStateToProps, mapDipatchToProps)(ListMovieItem)
+export default ListMovieItem
