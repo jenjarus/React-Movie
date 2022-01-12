@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb4b3900-af83-4b5f-bcc1-cbb90d5bf3c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListMovie.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListMovieItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListMovieItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListTops.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListTops.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SearchMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchMovie.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ViewMovieInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ViewMovieInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supportScripts.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +105,15 @@
       <workItem from="1636032412672" duration="62000" />
       <workItem from="1636114823532" duration="2058000" />
       <workItem from="1636233688857" duration="368000" />
-      <workItem from="1636274546892" duration="9427000" />
+      <workItem from="1636274546892" duration="9796000" />
+      <workItem from="1636356994000" duration="45000" />
+      <workItem from="1637086518608" duration="2099000" />
+      <workItem from="1637172962970" duration="1329000" />
+      <workItem from="1637519189473" duration="1147000" />
+      <workItem from="1638009462930" duration="9000" />
+      <workItem from="1638010810459" duration="3696000" />
+      <workItem from="1638022719868" duration="704000" />
+      <workItem from="1642007540267" duration="1100000" />
     </task>
     <servers />
   </component>

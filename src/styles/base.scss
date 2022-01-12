@@ -112,6 +112,25 @@ main {
     }
   }
 
+  .listTops {
+
+    .items {
+      text-align: center;
+
+      .btn {
+        margin-bottom: 10px;
+      }
+
+      @media screen and (max-width: 767px) {
+        .btn {
+          width: 100%;
+          max-width: 290px;
+          margin: 0 0 10px;
+        }
+      }
+    }
+  }
+
   .listMovie {
     .title {
       margin-bottom: 30px;
@@ -174,6 +193,22 @@ main {
           }
         }
       }
+
+      @media screen and (max-width: 991px) {
+        .item {
+          width: 33.3%;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .item {
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 499px) {
+        .item {
+          width: 100%;
+        }
+      }
     }
   }
 
@@ -213,11 +248,24 @@ main {
             font-size: 30px;
             font-weight: bold;
           }
+          @media screen and (max-width: 767px) {
+            .title {
+              text-align: center;
+              margin: 15px 0;
+            }
+          }
           .item {
             padding-bottom: 5px;
             border-bottom: 1px solid;
             margin-bottom: 5px;
           }
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .modal_info {
+          flex-direction: column;
+          align-items: center;
         }
       }
 
@@ -228,6 +276,11 @@ main {
           font-weight: bold;
         }
       }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .modal_box {
+      min-width: 100%;
     }
   }
   .modal_bg {
